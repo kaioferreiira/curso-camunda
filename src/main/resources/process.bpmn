@@ -34,10 +34,10 @@
       <bpmn:incoming>SequenceFlow_0nvp1ab</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_1iwfp5h</bpmn:outgoing>
     </bpmn:manualTask>
-    <bpmn:sendTask id="published-tweet" name="Published Tweet" camunda:class="com.camunda.training.delegate.CreateTweetDelegate">
+    <bpmn:serviceTask id="published-tweet" name="Published Tweet" camunda:class="com.camunda.training.delegate.CreateTweetDelegate">
       <bpmn:incoming>SequenceFlow_0r3kudk</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_1bg8cqc</bpmn:outgoing>
-    </bpmn:sendTask>
+    </bpmn:serviceTask>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="twitter-qa">
@@ -102,7 +102,7 @@
       <bpmndi:BPMNShape id="ManualTask_1retp3u_di" bpmnElement="received-tweet">
         <dc:Bounds x="270" y="137" width="100" height="80" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="SendTask_0snj309_di" bpmnElement="published-tweet">
+      <bpmndi:BPMNShape id="ServiceTask_0jxub2i_di" bpmnElement="published-tweet">
         <dc:Bounds x="560" y="137" width="100" height="80" />
       </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
